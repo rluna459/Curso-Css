@@ -1,0 +1,32 @@
+/*Propiedades de Texto
+color : modifica el color del texto (trabajar con colores fijos y absolutos)
+font-family : permite elegir la tipografia 1, tipografia 2 (cuando la tipografia tiene mas de una palabra hay que ponerla bajo comillas siempre)
+font-size: es el tamaño del texto o las letras , se puede medir en pixeles ,porcentaje ,etc
+font-weight: permite cambiar el grosor de las palabras o texto (se recomienda usar este para hacer negritas en ves de la etiqueta b en html)
+font-style: con italyc la letra se inclina ,normal que es la de por defecto, oblique hace casi lo mismo que italyc
+text-align: Alinea el texto (izquierda (left), derecha(right), centro(center), justificado(justify)end,start).
+text-decoration : Añade efectos como subrayado, tachado o sobrelineado (no usar blink)
+line-height:controla el espacio vertical entre las líneas de texto. Es como el interlineado en un procesador de texto.
+letter-spacing :ajusta el espacio horizontal entre las letras de un texto
+text-transform : transforma el texto en mayuscula (uppercase) y miniscula (lowercase) o Capitalize(pone todos los primeras letras en mayusculas)
+
+*/
+h1{
+    text-align: justify;
+    text-transform: uppercase;
+    color: red;
+}
+p{
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: justify;
+    text-decoration:solid;
+    line-height: 3;
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    
+
+}
