@@ -1,0 +1,19 @@
+/*Tipografias
+En CSS, la regla  te permite definir tipografías personalizadas para usarlas en tu página web,
+incluso si no son estándar en los navegadores. Básicamente,
+le decís al navegador: “descargá esta fuente desde tal archivo y úsala en mis estilos”.
+en la estructura:
+    font-family te pide que nombres como se va a llamar la tipografia
+    url te pide que pongas donde esta almacenada la tipografia que tiene que estar descargada
+
+*/
+
+
+
+
+
+@font-face {
+    font-family: "Daltox";
+    src: url("C:\Users\lunar\Ronaldo\cursoCSS\Tipografias\static\PlaywriteIE-ExtraLight.ttf") format("truetype");
+    font-weight: 400;
+}
