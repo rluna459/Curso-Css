@@ -1,0 +1,23 @@
+/*
+Partes del Box Model
+1. 	Content (Contenido) → el texto, imagen o información dentro del elemento.
+• 	Ejemplo: el párrafo que escribís entre .
+2. 	Padding (Relleno) → espacio interno entre el contenido y el borde.
+• 	Traducción: relleno.
+• 	Ejemplo: un “colchón” que separa el texto del borde.
+3. 	Border (Borde) → la línea que rodea el contenido y el padding.
+• 	Traducción: borde.
+• 	Ejemplo: un marco alrededor del bloque.
+4. 	Margin (Margen) → espacio externo entre el borde del elemento y otros elementos.
+• 	Traducción: margen.
+• 	Ejemplo: el aire que separa tu bloque de los demás.
+
+el width controla el ancho y hegth el alto del área de contenido dentro del Box Model.
+*/
+
+div{
+    background-color: red;
+    width: 200px;
+    height: 100px;
+
+}
