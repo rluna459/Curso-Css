@@ -1,34 +1,44 @@
-.tarjeta1{
-    background-color: crimson;
-    width: 150px;
-    height: 30px;
-    margin: auto;
-    text-align: center;
+body{
+    background: rgba(153, 18, 125,0.5);
 }
-
-.tarjeta2{
-    margin-top: 30px;
-    border-color: black;/*color del borde*/
-    border-width: 5px; /*ancho*/
-    border-style: solid;/*el estilo en este caso solido*/
-    border-radius: 10px;/*radio(redondeo del borde) del borde*/
-    border: 5px solid black; /*la propiedad border solo engloba las otras con la nomenclatura tamaño-estilo-color*/
-    border-top: 5px dashed blue /*ahora puedo usarlo con left-right-bottom-top para que se aplique solamente en esa posicion del borde*/
-
+.box{
+    width: 100px;
+    height: 100px;
+    background: #ff09;
+    margin: 20px;
+    margin-left: 100px;
+    border: 10px solid rgba(34, 23, 200, 0.65);
+    border-radius: 3px;
 }
-.tarjeta3{
-    margin-top: 30px;
-    background-color: black;
-    border: 3px solid violet;
-    border-radius: 10px;
-}
+/*
+-----------------------------------------------------------
+1) RGB (Red, Green, Blue)
+Se basa en la mezcla de luz roja, verde y azul.
+Cada valor va de 0 a 255.
+color: rgb(255, 0, 0);    Rojo 
+color: rgb(0, 255, 0);    Verde 
+color: rgb(0, 0, 255);    Azul 
+Agrega un cuarto valor: la opacidad (alpha), entre 0 y 1.
+color: rgba(255, 0, 0, 0.5);  Rojo semitransparente 
+----------------------------------------------------------
+2) HEX (Hexadecimal)
+Usa base 16 para representar colores.
+Formato: #RRGGBB (dos dígitos por cada canal).
+color: #ff0000; / Rojo 
+color: #00ff00; / Verde 
+color: #0000ff; / Azul 
+Se agrega dos dígitos más para la transparencia.
+color: #ff000080; / Rojo con 50% de opacidad 
+------------------------------------------------------------
+3) HSL (Hue, Saturation, Lightness)
+(A veces se confunde con HCL, pero en CSS se usa HSL)
+Hue (tono): el ángulo en la rueda de color (0 = rojo, 120 = verde, 240 = azul).
+Saturation (saturación): intensidad del color (0% gris, 100% color puro).
+Lightness (luminosidad): brillo (0% negro, 100% blanco).
+color: hsl(0, 100%, 50%);   /Rojo puro 
+color: hsl(120, 100%, 50%); /Verde puro 
+color: hsl(240, 100%, 50%); /Azul puro 
+Agrega transparencia.
+color: hsla(0, 100%, 50%, 0.5); /Rojo semitransparente 
 
-input{
-    margin: 30px;
-    padding: 6px;
-    border: none;
-    border-bottom: 1px solid blueviolet;
-    background: transparent;
-    color: cadetblue;
-
-}
+*/
