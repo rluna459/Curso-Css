@@ -1,31 +1,59 @@
 body{
-    background-color: black;
-    font-family: sans-serif;
-    color: azure;
+    margin: 0;
 }
 
 
-.card {
-    background-color: coral;
-    text-align: center;
+
+.box{
     width: 300px;
-    margin: auto;/*se usa mucho para centrar a la mitad horizaontalmente a lo ancho del total de la pagina*/
-    margin-top: 40px;
-}
-h1{
-    padding-top: 10px;
-    font-size: 22px;
-    letter-spacing: 2px;
-}
-h2{
-    font-size: 13px;
-    font-weight: 100;
-    letter-spacing: 2px;
+    height: 400px;
+    background: #e2e2e2;
+    margin: auto;
+    margin-top: 50px;
+    box-shadow: 20px 20px 50px 10px #000;
+    border: 4px solid gray;
+    border-radius: 19px;
 }
 
-p{
-    font-size: 9px;
-    padding: 20px;
-    background-color: brown;
-    text-align: justify;
+
+/*
+1) Text Shadow
+Aplica sombra al texto
+h1 {
+    text-shadow: 2px 2px 5px black;
 }
+    sintaxis
+text-shadow: desplazamientoX desplazamientoY blur color;
+2px → sombra hacia la derecha.
+2px → sombra hacia abajo.
+5px → difuminado.
+black → color de la sombra.
+Podés poner varias sombras separadas por comas:
+text-shadow: 2px 2px 5px black, -2px -2px 5px red;
+-------------------------------------------
+2) Box Shadow
+Aplica sombra a cajas (div, botones, etc.).
+div {
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+Sintaxis:
+box-shadow: desplazamientoX desplazamientoY blur spread color;
+5px → sombra a la derecha.
+5px → sombra hacia abajo.
+10px → difuminado.
+rgba(0,0,0,0.5) → color con transparencia.
+spread (opcional) → expande la sombra.
+Podés usar inset para que la sombra vaya hacia adentro:
+box-shadow: inset 0 0 10px gray;
+------------------------------------------
+🔹 Diferencia clave
+box-shadow → se aplica a la caja completa del elemento (incluye el rectángulo del div, aunque sea transparente).
+drop-shadow → se aplica a la forma real del contenido renderizado, respetando transparencias. Es decir, si tenés una imagen con fondo transparente, la sombra sigue la silueta de la imagen, no el rectángulo.
+filter: drop-shadow(offsetX offsetY blur color);
+offsetX → desplazamiento horizontal.
+offsetY → desplazamiento vertical.
+blur → difuminado.
+color → color de la sombra.
+
+
+*/
