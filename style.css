@@ -1,61 +1,31 @@
 body{
-    background-color: red;
-    margin: 0;
+    background-color: black;
+    font-family: sans-serif;
+    color: azure;
 }
 
 
-.box{
-    width: 400px;
-    height: 400px;
-    background: linear-gradient( #0009,transparent);
-    margin: 0;
-    border-radius: 7px;
-    margin: auto;
-    margin-top: 20px;
-    border-top: 6px solid #900;
-
+.card {
+    background-color: coral;
+    text-align: center;
+    width: 300px;
+    margin: auto;/*se usa mucho para centrar a la mitad horizaontalmente a lo ancho del total de la pagina*/
+    margin-top: 40px;
 }
 h1{
-    margin: 0;
-    color: #fff;
-    text-align: center;
+    padding-top: 10px;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+h2{
+    font-size: 13px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+p{
+    font-size: 9px;
     padding: 20px;
-    font-family: sans-serif;
-}
-
-/*
--------------------------------------------
-1) Linear Gradient (lineal)
-Crea una transición en línea recta entre dos o más colores
-div {
-    background: linear-gradient(to right, red, blue);
-}
-Va de rojo a azul en dirección horizontal.
-Podés usar direcciones: to right, to left, to top, to bottom, o ángulos (45deg).
-background: linear-gradient(90deg, red, yellow, green);
--------------------------------------------
-2) Radial Gradient (radial)
-El gradiente se expande desde un punto central hacia afuera.
-div {
-    background: radial-gradient(circle, red, blue);
-}
-Empieza rojo en el centro y se va volviendo azul hacia los bordes.
-Podés usar circle o ellipse.
------------------------------------------
-3) Conic Gradient (cónico)
-El gradiente gira alrededor de un punto, como un círculo de colores.
-div {
-    background: conic-gradient(red, yellow, green, blue);
-}
-Se ve como una rueda de colores.
------------------------------------------
-🔹 Extras útiles
-Podés combinar gradientes con transparencia (rgba).
-Podés usarlos como background-image junto con imágenes.
-Se pueden repetir patrones con repeating-linear-gradient.
-
-
-*/
-.box2{
-    background: repeating-linear-gradient(45deg, black, black 10px, white 10px, white 20px);
+    background-color: brown;
+    text-align: justify;
 }
