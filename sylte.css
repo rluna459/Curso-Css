@@ -1,0 +1,37 @@
+/*
+El padding en CSS es el espacio interno que se genera entre el contenido de un elemento y su borde.
+Es como un “colchón” que separa el texto o imagen del marco que lo rodea.
+
+css nos permite hacer lo siguiente 
+    si ponemos un solo valor ,ese valorva para todos los lados
+    si ponemos 4 valores va en este orden arriba,derecha,abajo,izquierda
+    si ponemos 2 valores el primer valor va para los horinzontles(arriba,abajo) y el otro para los verticales(derecha ,izquierda)
+padding : aplica el  mismo valor mismo valor en todos los lados
+padding-top : relleno en la parte superior.
+padding-right :  relleno en el lado derecho.
+padding-bottom :  relleno en la parte inferior
+padding-left : relleno en el lado izquierdo.
+
+
+*/
+
+.formulario{
+    background: red;
+    padding: 30px;
+
+}
+
+.formulario_input{
+    padding: 9px 10px;
+    width: 100%;
+    background: black;
+    color: red;
+    margin: 10px;
+}
+.formulario_submit{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    background: red;
+    color: white;
+    width: 50%;
+}
