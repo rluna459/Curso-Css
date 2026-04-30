@@ -1,0 +1,18 @@
+/*selectores :Formas de seleccionar 1 o mas elementos 
+selecioon por elementos : busca el nombre del elemento html que se llama asi y modificarlo en css (es una mala practica porque llama a todos los elemento que tienen el mismo nombre y los modifican)p{
+*/
+li{
+    color: blue;
+}
+/*
+Selector de clase: se usa con  y aplica a los elementos que tengan esa clase.
+*/
+.faltante{
+    color: red;
+}
+/*
+Selector de id: se usa con  y aplica a un único elemento con ese id.
+*/
+#ingrediente_secreto{
+    color: black;
+}
