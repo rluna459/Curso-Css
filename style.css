@@ -1,59 +1,94 @@
-body{
+div{
+    background: #ededed;
+    padding: 20px;
+    font-family: sans-serif;
+    border-left: 5px solid rgb(256, 200, 0)
+}
+
+h1{
     margin: 0;
 }
-
-
-
-.box{
-    width: 300px;
-    height: 400px;
-    background: #e2e2e2;
-    margin: auto;
-    margin-top: 50px;
-    box-shadow: 20px 20px 50px 10px #000;
-    border: 4px solid gray;
-    border-radius: 19px;
+span{
+    color: rgb(50, 140, 255);
+    font-size: 16px;
+    font-weight: 100;
 }
 
+p{
+    color: rgb(50, 140, 240);
+}
 
 /*
-1) Text Shadow
-Aplica sombra al texto
-h1 {
-    text-shadow: 2px 2px 5px black;
-}
-    sintaxis
-text-shadow: desplazamientoX desplazamientoY blur color;
-2px → sombra hacia la derecha.
-2px → sombra hacia abajo.
-5px → difuminado.
-black → color de la sombra.
-Podés poner varias sombras separadas por comas:
-text-shadow: 2px 2px 5px black, -2px -2px 5px red;
--------------------------------------------
-2) Box Shadow
-Aplica sombra a cajas (div, botones, etc.).
-div {
-    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-}
-Sintaxis:
-box-shadow: desplazamientoX desplazamientoY blur spread color;
-5px → sombra a la derecha.
-5px → sombra hacia abajo.
-10px → difuminado.
-rgba(0,0,0,0.5) → color con transparencia.
-spread (opcional) → expande la sombra.
-Podés usar inset para que la sombra vaya hacia adentro:
-box-shadow: inset 0 0 10px gray;
-------------------------------------------
-🔹 Diferencia clave
-box-shadow → se aplica a la caja completa del elemento (incluye el rectángulo del div, aunque sea transparente).
-drop-shadow → se aplica a la forma real del contenido renderizado, respetando transparencias. Es decir, si tenés una imagen con fondo transparente, la sombra sigue la silueta de la imagen, no el rectángulo.
-filter: drop-shadow(offsetX offsetY blur color);
-offsetX → desplazamiento horizontal.
-offsetY → desplazamiento vertical.
-blur → difuminado.
-color → color de la sombra.
-
-
+1) Unidades absolutas
+Son fijas, no cambian según el entorno.
+Ejemplo:
+px (pixeles) → la más usada, representa un punto en pantalla.
+cm, mm, in → centímetros, milímetros, pulgadas (casi nunca se usan en web).
+pt, pc → puntos y picas (más comunes en impresión).
+👉 Sirven para medidas exactas, pero no son responsivas.
+---------------------
+2) Unidades relativas
+Se adaptan al contexto (tamaño de fuente, viewport, contenedor).
+em → relativo al tamaño de fuente del elemento padre.
+Ejemplo: 2em = 2 veces el tamaño de la fuente heredada.
+rem → relativo al tamaño de fuente raíz (html).
+Ejemplo: 1rem = igual al tamaño base definido en html.
+% (porcentaje) → relativo al tamaño del contenedor.
+Ejemplo: width: 50% → ocupa la mitad del ancho del padre.
+vw (viewport width) → relativo al ancho de la ventana.
+Ejemplo: 50vw = 50% del ancho de la pantalla.
+vh (viewport height) → relativo al alto de la ventana.
+Ejemplo: 100vh = ocupa toda la altura de la pantalla.
+vmin / vmax → relativo al menor o mayor lado del viewport.
+Ejemplo: vmin útil para mantener proporciones en pantallas distintas.
+-------------------
+| Unidad | Relación       | Ejemplo                  | Uso típico          |
+| ---    | ---            | ---                      | ---                 |
+| px     | fijo           | ``width: ``200px``       | botones, bordes     |
+| em     | fuente padre   | ``font-size: ``2em``     | escalado relativo   |
+| rem    | fuente raíz    | ``font-size: ``1.5rem``  | diseño consistente  |
+| %      | contenedor     | ``width: ``50%``         | layouts fluidos     |
+| vw     | ancho viewport | ``width: ``100vw``       | full width          |
+| vh     | alto viewport  | ``height: ``100vh``      | pantallas completas |
+--------------------------------------
+Buenas prácticas (como recomienda Dalto)
+Usar rem para fuentes → mantiene consistencia.
+Usar % y vw/vh para layouts → más responsivos.
+Evitar abusar de px → puede romper en pantallas pequeñas.
+Combinar unidades → ejemplo: padding: 2rem; width: 80%; height: 100vh;.
 */
+
+/* Caja con px (absoluto) */
+.caja-px {
+    width: 200px;
+    height: 100px;
+    background: red;
+    margin: 10px;
+}
+
+/* Caja con % (relativo al contenedor) */
+.caja-porcentaje {
+    width: 50%;
+    height: 100px;
+    background: green;
+    margin: 10px;
+}
+
+/* Caja con rem (relativo al font-size raíz) */
+html {
+  font-size: 16px; /* base */
+}
+.caja-rem {
+    width: 20rem; /* 20 * 16px = 320px */
+    height: 5rem;  /* 5 * 16px = 80px */
+    background: blue;
+    margin: 10px;
+}
+
+/* Caja con vw/vh (relativo al viewport) */
+.caja-vwvh {
+    width: 50vw; /* mitad del ancho de la pantalla */
+    height: 30vh; /* 30% de la altura de la pantalla */
+    background: orange;
+    margin: 10px;
+}
