@@ -1,0 +1,34 @@
+.tarjeta1{
+    background-color: crimson;
+    width: 150px;
+    height: 30px;
+    margin: auto;
+    text-align: center;
+}
+
+.tarjeta2{
+    margin-top: 30px;
+    border-color: black;/*color del borde*/
+    border-width: 5px; /*ancho*/
+    border-style: solid;/*el estilo en este caso solido*/
+    border-radius: 10px;/*radio(redondeo del borde) del borde*/
+    border: 5px solid black; /*la propiedad border solo engloba las otras con la nomenclatura tamaño-estilo-color*/
+    border-top: 5px dashed blue /*ahora puedo usarlo con left-right-bottom-top para que se aplique solamente en esa posicion del borde*/
+
+}
+.tarjeta3{
+    margin-top: 30px;
+    background-color: black;
+    border: 3px solid violet;
+    border-radius: 10px;
+}
+
+input{
+    margin: 30px;
+    padding: 6px;
+    border: none;
+    border-bottom: 1px solid blueviolet;
+    background: transparent;
+    color: cadetblue;
+
+}
