@@ -1,72 +1,61 @@
 body{
-    background-color: rgb(143, 192, 143);
+    background-color: red;
+    margin: 0;
 }
+
+
 .box{
-    background-color: #222;
-    background-image: url("Fondos\fondo.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient( #0009,transparent);
+    margin: 0;
+    border-radius: 7px;
+    margin: auto;
+    margin-top: 20px;
+    border-top: 6px solid #900;
+
 }
+h1{
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
 /*
-1) background-color
-Define un color de fondo.
+-------------------------------------------
+1) Linear Gradient (lineal)
+Crea una transición en línea recta entre dos o más colores
 div {
-    background-color: lightblue;
+    background: linear-gradient(to right, red, blue);
 }
--------------------------------
-2) background-image
-Permite poner una imagen como fondo.
+Va de rojo a azul en dirección horizontal.
+Podés usar direcciones: to right, to left, to top, to bottom, o ángulos (45deg).
+background: linear-gradient(90deg, red, yellow, green);
+-------------------------------------------
+2) Radial Gradient (radial)
+El gradiente se expande desde un punto central hacia afuera.
 div {
-    background-image: url("fondo.jpg");
+    background: radial-gradient(circle, red, blue);
 }
-👉 La imagen se coloca detrás del contenido del elemento.
--------------------------------------
-3) background-repeat
-Controla si la imagen se repite.
-repeat (por defecto) → se repite en ambas direcciones.
-no-repeat → se muestra una sola vez.
-repeat-x → solo horizontal.
-repeat-y → solo vertical.
-div {
-    background-image: url("pattern.png");
-    background-repeat: no-repeat;
-}
-------------------------------------
-4) background-position
-Define dónde se coloca la imagen.
-div {
-    background-position: center;
-}
-------------------------------------------
-5) background-size
-Controla el tamaño de la imagen.
-cover → cubre todo el elemento, recortando si es necesario.
-contain → ajusta la imagen para que entre completa.
-valores → 100px 200px.
-div {
-    background-size: cover;
-}
-----------------------------------------
-6) background-attachment
-Define si el fondo se mueve con el scroll.
-scroll → se mueve con la página.
-fixed → queda fijo en la pantalla.
-local → se mueve con el contenido del elemento.
-div {
-    background-attachment: fixed;
-}
------------------------------
-En resumen
-background-color → color sólido.
-background-image → imagen de fondo.
-background-repeat → repetir o no la imagen.
-background-position → ubicación de la imagen.
-background-size → tamaño de la imagen.
-background-attachment → comportamiento al hacer scroll.
+Empieza rojo en el centro y se va volviendo azul hacia los bordes.
+Podés usar circle o ellipse.
 -----------------------------------------
-background es la forma abreviada de definir color, imagen, posición, tamaño, repetición y attachment.
-sintaxis:
-    background: color image position / size repeat attachment origin clip;
+3) Conic Gradient (cónico)
+El gradiente gira alrededor de un punto, como un círculo de colores.
+div {
+    background: conic-gradient(red, yellow, green, blue);
+}
+Se ve como una rueda de colores.
+-----------------------------------------
+🔹 Extras útiles
+Podés combinar gradientes con transparencia (rgba).
+Podés usarlos como background-image junto con imágenes.
+Se pueden repetir patrones con repeating-linear-gradient.
+
+
 */
+.box2{
+    background: repeating-linear-gradient(45deg, black, black 10px, white 10px, white 20px);
+}
